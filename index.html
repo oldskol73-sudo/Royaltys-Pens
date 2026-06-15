@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royalty's Pens — Handcrafted Luxury Pens</title>
+  <meta name="description" content="Shop Royalty's Pens for handcrafted luxury pens featuring crystals, beads, charms, butterflies, crowns, and custom designs. Perfect gifts and collectible writing instruments." />
+  <meta name="keywords" content="Custom Pens, Handmade Pens, Decorative Pens, Luxury Pens, Crystal Pens, Beaded Pens, Gift Pens, Personalized Pens, Boutique Writing Instruments, Unique Office Gifts" />
+  <meta property="og:title" content="Royalty's Pens — Write Like Royalty" />
+  <meta property="og:description" content="Handcrafted luxury pens featuring crystals, beads, charms, butterflies, crowns, and custom designs." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      Royalty's Pens
+      <span>✦ Write Like Royalty ✦</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="custom-orders.html">Custom Orders</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-cart-btn" id="cartBtn" aria-label="Open cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html"><i class="fa-solid fa-house" style="margin-right:.5rem"></i>Home</a>
+  <a href="shop.html"><i class="fa-solid fa-store" style="margin-right:.5rem"></i>Shop</a>
+  <a href="custom-orders.html"><i class="fa-solid fa-pen-nib" style="margin-right:.5rem"></i>Custom Orders</a>
+  <a href="#about"><i class="fa-solid fa-heart" style="margin-right:.5rem"></i>About</a>
+  <a href="#contact"><i class="fa-solid fa-envelope" style="margin-right:.5rem"></i>Contact</a>
+</nav>
+
+<main>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <!-- sparkle dots -->
+  <div class="hero-sparkles" id="sparkles"></div>
+
+  <!-- decorative pen SVG -->
+  <div class="hero-art">
+    <svg width="280" height="420" viewBox="0 0 280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- pen body -->
+      <rect x="115" y="60" width="50" height="300" rx="25" fill="url(#penGrad)"/>
+      <!-- cap -->
+      <rect x="115" y="30" width="50" height="80" rx="25" fill="url(#capGrad)"/>
+      <!-- clip -->
+      <rect x="155" y="35" width="8" height="100" rx="4" fill="#E8C86A"/>
+      <!-- tip -->
+      <polygon points="140,360 125,410 155,410" fill="url(#tipGrad)"/>
+      <!-- crystals -->
+      <circle cx="140" cy="100" r="8" fill="#E8C86A" opacity=".9"/>
+      <circle cx="125" cy="130" r="5" fill="#C9A84C" opacity=".8"/>
+      <circle cx="155" cy="150" r="6" fill="#E8C86A" opacity=".7"/>
+      <circle cx="130" cy="200" r="4" fill="#FFD700" opacity=".6"/>
+      <circle cx="152" cy="220" r="5" fill="#C9A84C" opacity=".8"/>
+      <!-- sparkle accents -->
+      <text x="85"  y="120" font-size="18" fill="#E8C86A" opacity=".7">✦</text>
+      <text x="168" y="180" font-size="14" fill="#C9A84C" opacity=".6">✦</text>
+      <text x="75"  y="230" font-size="12" fill="#FFD700" opacity=".5">✦</text>
+      <text x="172" y="280" font-size="10" fill="#E8C86A" opacity=".4">✦</text>
+      <defs>
+        <linearGradient id="penGrad" x1="115" y1="60" x2="165" y2="360" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#9B59B6"/>
+          <stop offset="50%"  stop-color="#6B2D8B"/>
+          <stop offset="100%" stop-color="#4A1060"/>
+        </linearGradient>
+        <linearGradient id="capGrad" x1="115" y1="30" x2="165" y2="110" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#C9A84C"/>
+          <stop offset="100%" stop-color="#E8C86A"/>
+        </linearGradient>
+        <linearGradient id="tipGrad" x1="125" y1="360" x2="155" y2="410" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#C0C0C0"/>
+          <stop offset="100%" stop-color="#888"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">✦ Handcrafted with Love ✦</div>
+      <h1>Handcrafted Pens<br/><em>Fit for Royalty</em></h1>
+      <p class="hero-sub">Discover one-of-a-kind custom pens designed to turn everyday writing into an extraordinary experience.</p>
+      <div class="hero-btns">
+        <a href="shop.html" class="btn btn-primary">
+          <i class="fa-solid fa-gem"></i> Shop Collection
+        </a>
+        <a href="custom-orders.html" class="btn btn-outline">
+          <i class="fa-solid fa-pen-nib"></i> Custom Orders
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ── FEATURED COLLECTIONS ── -->
+<section class="collections" id="collections">
+  <div class="container text-center">
+    <div class="section-label">Explore Our World</div>
+    <h2 class="section-title">Featured Collections</h2>
+    <div class="divider-gold"></div>
+    <p class="section-sub">Each collection is a celebration of craftsmanship — browse by theme and find your perfect pen.</p>
+
+    <div class="collections-grid">
+
+      <a href="shop.html?filter=crystal" class="collection-card">
+        <div class="collection-art col-crystal" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">💎</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Crystal Collection</div>
+          <div class="collection-count">Sparkling rhinestones & Swarovski</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=butterfly" class="collection-card">
+        <div class="collection-art col-butterfly" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">🦋</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Butterfly Collection</div>
+          <div class="collection-count">Delicate & whimsical designs</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=crown" class="collection-card">
+        <div class="collection-art col-crown" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">👑</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Crown Collection</div>
+          <div class="collection-count">Regal gold & jeweled crowns</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=floral" class="collection-card">
+        <div class="collection-art col-floral" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">🌸</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Floral Collection</div>
+          <div class="collection-count">Blooms, petals & garden charm</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=character" class="collection-card">
+        <div class="collection-art col-character" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">🌟</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Character Collection</div>
+          <div class="collection-count">Fun themed & pop culture pens</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=executive" class="collection-card">
+        <div class="collection-art col-executive" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">✒️</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Luxury Executive Pens</div>
+          <div class="collection-count">Sophisticated office elegance</div>
+        </div>
+      </a>
+
+      <a href="shop.html?filter=seasonal" class="collection-card">
+        <div class="collection-art col-seasonal" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">❄️</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Seasonal Collections</div>
+          <div class="collection-count">Holiday & limited editions</div>
+        </div>
+      </a>
+
+      <a href="custom-orders.html" class="collection-card">
+        <div class="collection-art col-custom" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="80" height="120" viewBox="0 0 80 120"><text y="70" x="10" font-size="60">🎨</text></svg>
+        </div>
+        <div class="collection-overlay">
+          <div class="collection-name">Custom Designs</div>
+          <div class="collection-count">Made just for you</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section class="why" id="why">
+  <div class="container text-center">
+    <div class="section-label">Our Promise</div>
+    <h2 class="section-title">Why Choose Royalty's Pens?</h2>
+    <div class="divider-gold"></div>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="why-icon">🤲</span>
+        <h4>Handcrafted with Care</h4>
+        <p>Every pen is made by hand, one at a time, with meticulous attention to detail.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">✦</span>
+        <h4>One-of-a-Kind Designs</h4>
+        <p>No two pens are exactly alike — each is a truly unique work of wearable art.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">💎</span>
+        <h4>Premium Materials</h4>
+        <p>We use crystals, Swarovski elements, quality beads, and luxury embellishments.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">🎁</span>
+        <h4>Perfect for Gifting</h4>
+        <p>Beautifully packaged and ready to delight teachers, colleagues, brides, and loved ones.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">🚚</span>
+        <h4>Fast Shipping</h4>
+        <p>Orders ship within 3–5 business days. Rush options available on most items.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">🎨</span>
+        <h4>Custom Orders Available</h4>
+        <p>Name initials, brand colors, wedding themes — we'll create your vision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BEST SELLERS ── -->
+<section class="best-sellers" id="bestsellers">
+  <div class="container text-center">
+    <div class="section-label">Top Picks</div>
+    <h2 class="section-title">Best Sellers</h2>
+    <div class="divider-gold"></div>
+    <p class="section-sub">Our most-loved pens — each one a customer favorite.</p>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card"
+        data-name="Amethyst Royale Crystal Pen"
+        data-price="$34.99"
+        data-desc="Adorned with hand-placed amethyst crystals and gold-tipped accents. Refillable black ink. A stunning statement piece for your desk or gift box."
+        data-category="crystal">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;">
+            <svg width="60" height="160" viewBox="0 0 60 160">
+              <rect x="20" y="10" width="20" height="120" rx="10" fill="url(#p1g)"/>
+              <polygon points="30,130 22,158 38,158" fill="#C0C0C0"/>
+              <circle cx="30" cy="30" r="5" fill="#E8C86A"/>
+              <circle cx="23" cy="55" r="3" fill="#C9A84C"/>
+              <circle cx="37" cy="75" r="4" fill="#E8C86A"/>
+              <circle cx="25" cy="100" r="3" fill="#C9A84C"/>
+              <defs><linearGradient id="p1g" x1="20" y1="10" x2="40" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#9B59B6"/><stop offset="1" stop-color="#4A1060"/></linearGradient></defs>
+            </svg>
+          </div>
+          <span class="product-badge badge badge-gold">Best Seller</span>
+          <div class="product-quick-view">
+            <button class="btn btn-primary btn-sm quick-view-btn">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Amethyst Royale Crystal Pen</div>
+          <div class="product-sub">Crystal Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row">
+            <span class="product-price">$34.99</span>
+          </div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card"
+        data-name="Golden Butterfly Dream Pen"
+        data-price="$29.99"
+        data-desc="Delicate hand-painted butterfly charms in gold and blush shimmer. Writes in blue ink and is fully refillable."
+        data-category="butterfly">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#3D1060,#FF69B4);display:flex;align-items:center;justify-content:center;">
+            <svg width="60" height="160" viewBox="0 0 60 160">
+              <rect x="20" y="10" width="20" height="120" rx="10" fill="url(#p2g)"/>
+              <polygon points="30,130 22,158 38,158" fill="#C0C0C0"/>
+              <text x="10" y="55" font-size="28">🦋</text>
+              <circle cx="30" cy="80" r="4" fill="#E8C86A"/>
+              <defs><linearGradient id="p2g" x1="20" y1="10" x2="40" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#FF69B4"/><stop offset="1" stop-color="#3D1060"/></linearGradient></defs>
+            </svg>
+          </div>
+          <span class="product-badge badge badge-purple">Fan Favorite</span>
+          <div class="product-quick-view">
+            <button class="btn btn-primary btn-sm quick-view-btn">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Golden Butterfly Dream Pen</div>
+          <div class="product-sub">Butterfly Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row">
+            <span class="product-price">$29.99</span>
+          </div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card"
+        data-name="Queen's Crown Jewel Pen"
+        data-price="$39.99"
+        data-desc="A bold gold crown topper dripping with rhinestones. Jet black barrel with golden accents. Refillable black ink."
+        data-category="crown">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#0D0D0D,#C9A84C);display:flex;align-items:center;justify-content:center;">
+            <svg width="60" height="160" viewBox="0 0 60 160">
+              <rect x="20" y="25" width="20" height="115" rx="10" fill="url(#p3g)"/>
+              <polygon points="30,140 22,158 38,158" fill="#888"/>
+              <text x="10" y="30" font-size="30">👑</text>
+              <circle cx="30" cy="70" r="3" fill="#E8C86A"/>
+              <circle cx="23" cy="90" r="2" fill="#C9A84C"/>
+              <defs><linearGradient id="p3g" x1="20" y1="25" x2="40" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#C9A84C"/><stop offset="1" stop-color="#0D0D0D"/></linearGradient></defs>
+            </svg>
+          </div>
+          <span class="product-badge badge badge-gold">New Arrival</span>
+          <div class="product-quick-view">
+            <button class="btn btn-primary btn-sm quick-view-btn">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Queen's Crown Jewel Pen</div>
+          <div class="product-sub">Crown Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row">
+            <span class="product-price">$39.99</span>
+          </div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card"
+        data-name="Rose Garden Floral Pen"
+        data-price="$27.99"
+        data-desc="Tiny silk roses and seed pearls wrap a blush pink barrel. A romantic pen for journals, notes, and everyday elegance."
+        data-category="floral">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#6B1060,#FF85A1);display:flex;align-items:center;justify-content:center;">
+            <svg width="60" height="160" viewBox="0 0 60 160">
+              <rect x="20" y="10" width="20" height="120" rx="10" fill="url(#p4g)"/>
+              <polygon points="30,130 22,158 38,158" fill="#C0C0C0"/>
+              <text x="10" y="50" font-size="26">🌸</text>
+              <text x="13" y="85" font-size="20">🌺</text>
+              <defs><linearGradient id="p4g" x1="20" y1="10" x2="40" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#FF85A1"/><stop offset="1" stop-color="#6B1060"/></linearGradient></defs>
+            </svg>
+          </div>
+          <div class="product-quick-view">
+            <button class="btn btn-primary btn-sm quick-view-btn">Quick View</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Rose Garden Floral Pen</div>
+          <div class="product-sub">Floral Collection</div>
+          <div class="stars">★★★★☆</div>
+          <div class="product-price-row">
+            <span class="product-price">$27.99</span>
+          </div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:2.5rem;">
+      <a href="shop.html" class="btn btn-purple">
+        <i class="fa-solid fa-store"></i> View Full Collection
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials" id="reviews">
+  <div class="container text-center">
+    <div class="section-label">Customer Love</div>
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="divider-gold"></div>
+    <p class="section-sub" style="color:rgba(255,255,255,.65)">Thousands of happy writers across the country.</p>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"Everyone asks where I got my pen. It's absolutely gorgeous — I get compliments every single day at work!"</p>
+        <div class="testi-author">— Michelle T., Teacher</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"The perfect gift for my daughter and her favorite teacher. Both of them absolutely loved it. Will definitely order again!"</p>
+        <div class="testi-author">— Angela R., Mom & Gift Shopper</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"I ordered 20 custom pens for my bridal party and they were a massive hit. Every bridesmaid was obsessed!"</p>
+        <div class="testi-author">— Danielle M., Bride</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"I'm a journal fanatic and this pen has become my most prized possession. The crystals are stunning and it writes beautifully."</p>
+        <div class="testi-author">— Keisha J., Journal Enthusiast</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"Ordered a custom pen with our company logo and colors — the quality exceeded every expectation. Incredible keepsakes!"</p>
+        <div class="testi-author">— Sandra W., Event Planner</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-quote">"Fast shipping, beautiful packaging, and the pen is even more stunning in person. This is my new favorite small business!"</p>
+        <div class="testi-author">— Tricia L., Repeat Customer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-art-wrap">
+        <svg width="340" height="280" viewBox="0 0 340 280" fill="none">
+          <!-- artisan hands illustration -->
+          <text x="120" y="130" font-size="80" opacity=".8">✍️</text>
+          <text x="60"  y="60"  font-size="30">💎</text>
+          <text x="240" y="60"  font-size="30">👑</text>
+          <text x="60"  y="240" font-size="30">🌸</text>
+          <text x="240" y="240" font-size="30">🦋</text>
+          <text x="170" y="260" font-size="20" fill="rgba(201,168,76,.6)" font-family="serif" text-anchor="middle">Write Like Royalty</text>
+        </svg>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">About Royalty's Pens</h2>
+        <div class="divider-gold" style="margin-left:0;"></div>
+        <p>Our passion is transforming ordinary writing instruments into extraordinary statement pieces. Every pen is handcrafted with attention to detail, ensuring that each customer receives a unique creation that reflects elegance, creativity, and individuality.</p>
+        <p>Born from a love of artistry and self-expression, Royalty's Pens was founded on one simple belief: the tools you write with should be as beautiful as the words you write.</p>
+        <p>From sparkling crystal embellishments to delicate floral arrangements and regal crown toppers, each pen tells its own story — and helps you tell yours.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <strong>5,000+</strong>
+            <span>Pens Crafted</span>
+          </div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Handmade</span>
+          </div>
+          <div class="stat-item">
+            <strong>★ 4.9</strong>
+            <span>Avg Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ── -->
+<section class="newsletter" id="newsletter">
+  <div class="container">
+    <div class="section-label">Stay in the Loop</div>
+    <h2>Join the Royal Court</h2>
+    <p>Receive exclusive product releases, special promotions, and custom design updates — delivered straight to your inbox.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Enter your royal email address…" required />
+      <button type="submit" class="btn btn-primary">
+        <i class="fa-solid fa-crown"></i> Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ── INSTAGRAM GALLERY ── -->
+<section class="instagram" id="gallery">
+  <div class="container text-center">
+    <div class="section-label">@RoyaltysPens</div>
+    <h2 class="section-title">Follow Our Journey</h2>
+    <div class="divider-gold"></div>
+    <p class="section-sub">Tag us in your photos for a chance to be featured!</p>
+
+    <div class="insta-grid">
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#6B2D8B,#C9A84C);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">💎</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#FF69B4,#4A1060);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🦋</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#0D0D0D,#E8C86A);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">👑</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#FF85A1,#6B1060);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🌸</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#4A1060,#7B68EE);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">✨</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+      <div class="insta-tile">
+        <div class="insta-art" style="background:linear-gradient(135deg,#1A4060,#C9A84C);height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🎁</div>
+        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;">
+      <a href="#" class="btn btn-purple">
+        <i class="fa-brands fa-instagram"></i> Follow on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:#fff;">
+          Royalty's Pens
+          <span>✦ Write Like Royalty ✦</span>
+        </div>
+        <p>Handcrafted luxury pens designed to make every moment of writing extraordinary. Each piece is a one-of-a-kind work of art.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop.html">All Pens</a></li>
+          <li><a href="shop.html?filter=crystal">Crystal Collection</a></li>
+          <li><a href="shop.html?filter=butterfly">Butterfly Collection</a></li>
+          <li><a href="shop.html?filter=crown">Crown Collection</a></li>
+          <li><a href="shop.html?filter=floral">Floral Collection</a></li>
+          <li><a href="custom-orders.html">Custom Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Royalty's Pens. All rights reserved.</span>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── CART DRAWER ── -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>🛒 Your Cart</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty">
+      <div class="empty-icon">👜</div>
+      <p>Your cart is empty.<br/>Add some royal pens!</p>
+      <a href="shop.html" class="btn btn-purple btn-sm mt-2">Browse Collection</a>
+    </div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-total">
+      <span>Total</span>
+      <span class="price" id="cartTotal">$0.00</span>
+    </div>
+    <a href="#" class="btn btn-primary btn-full mb-1">
+      <i class="fa-solid fa-lock"></i> Secure Checkout
+    </a>
+    <a href="#" class="btn btn-outline btn-full" style="border-color:var(--gray-100);color:var(--gray-600);">Continue Shopping</a>
+  </div>
+</aside>
+
+<!-- ── QUICK VIEW MODAL ── -->
+<div class="modal-overlay" id="quickViewModal" role="dialog" aria-label="Quick view">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-img" id="modalImg" style="background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;font-size:4rem;">💎</div>
+      <div class="modal-info">
+        <span class="badge badge-gold">Handcrafted</span>
+        <h3 id="modalName" style="margin-top:.75rem;"></h3>
+        <div class="stars" style="margin:.4rem 0;">★★★★★</div>
+        <div class="modal-price" id="modalPrice"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <button class="btn btn-primary modal-cart-btn" style="flex:1;">Add to Cart</button>
+          <a href="product.html" class="btn btn-purple" style="flex:1;">Full Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TOAST ── -->
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
