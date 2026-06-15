@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Orders — Royalty's Pens</title>
+  <meta name="description" content="Request a custom handcrafted pen from Royalty's Pens. Choose your colors, themes, names, initials, and more. Perfect for weddings, corporate gifts, and teacher appreciation." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Royalty's Pens<span>✦ Write Like Royalty ✦</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="custom-orders.html" style="color:var(--gold)">Custom Orders</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-cart-btn" id="cartBtn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html"><i class="fa-solid fa-house" style="margin-right:.5rem"></i>Home</a>
+  <a href="shop.html"><i class="fa-solid fa-store" style="margin-right:.5rem"></i>Shop</a>
+  <a href="custom-orders.html"><i class="fa-solid fa-pen-nib" style="margin-right:.5rem"></i>Custom Orders</a>
+  <a href="index.html#about"><i class="fa-solid fa-heart" style="margin-right:.5rem"></i>About</a>
+</nav>
+
+<!-- HERO -->
+<section class="custom-hero">
+  <div class="container">
+    <div class="section-label">Made Just for You</div>
+    <h1>Design Your Dream Pen</h1>
+    <p>Tell us your vision and we'll craft a one-of-a-kind pen that's entirely, uniquely yours — for yourself, as a gift, or for your entire team.</p>
+    <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:2rem;">
+      <div style="text-align:center;color:rgba(255,255,255,.8);">
+        <div style="font-size:2rem;margin-bottom:.25rem;">🎨</div>
+        <div style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Choose Colors</div>
+      </div>
+      <div style="color:rgba(255,255,255,.3);font-size:1.5rem;align-self:center;">→</div>
+      <div style="text-align:center;color:rgba(255,255,255,.8);">
+        <div style="font-size:2rem;margin-bottom:.25rem;">✍️</div>
+        <div style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Add Details</div>
+      </div>
+      <div style="color:rgba(255,255,255,.3);font-size:1.5rem;align-self:center;">→</div>
+      <div style="text-align:center;color:rgba(255,255,255,.8);">
+        <div style="font-size:2rem;margin-bottom:.25rem;">💎</div>
+        <div style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">We Create It</div>
+      </div>
+      <div style="color:rgba(255,255,255,.3);font-size:1.5rem;align-self:center;">→</div>
+      <div style="text-align:center;color:rgba(255,255,255,.8);">
+        <div style="font-size:2rem;margin-bottom:.25rem;">📦</div>
+        <div style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Ships to You</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR USE CASES -->
+<div style="background:var(--white);padding:3rem 0;border-bottom:1px solid var(--gray-100);">
+  <div class="container text-center">
+    <div class="section-label">Popular Requests</div>
+    <h2 class="section-title" style="margin-bottom:1.5rem;">What Can We Create for You?</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.25rem;margin-top:2rem;">
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">💍</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Wedding Favors</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">Custom bridal party &amp; guest gifts</div>
+      </div>
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">🍎</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Teacher Gifts</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">Appreciation &amp; end-of-year gifts</div>
+      </div>
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">💼</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Corporate Gifts</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">Branded pens for clients &amp; teams</div>
+      </div>
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">🎂</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Birthdays</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">Personalized name &amp; birth month</div>
+      </div>
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">🎓</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Graduations</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">School colors &amp; year embellishments</div>
+      </div>
+      <div style="padding:1.5rem 1rem;border-radius:var(--radius-md);background:var(--purple-bg);text-align:center;">
+        <div style="font-size:2rem;margin-bottom:.5rem;">✨</div>
+        <div style="font-weight:700;color:var(--purple-dark);font-size:.9rem;">Just Because</div>
+        <div style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">Treat yourself — you deserve it</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM SECTION -->
+<section class="custom-form-section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem;">
+      <div class="section-label">Start Your Order</div>
+      <h2 class="section-title">Custom Order Request</h2>
+      <div class="divider-gold"></div>
+      <p style="color:var(--gray-600);max-width:500px;margin:0 auto;">Fill out the form below and we'll reach out within 24–48 hours with a quote and design mockup.</p>
+    </div>
+
+    <div class="custom-form-wrap">
+
+      <!-- Success state (hidden by default) -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">👑</div>
+        <h3>Your Order Request Has Been Received!</h3>
+        <p>Thank you for choosing Royalty's Pens. We'll review your details and reach out within 24–48 hours with your custom quote and design preview.</p>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="shop.html" class="btn btn-purple">Browse Ready-Made Pens</a>
+          <button class="btn btn-outline" style="border-color:var(--purple);color:var(--purple);" onclick="resetForm()">Submit Another Request</button>
+        </div>
+      </div>
+
+      <form id="customOrderForm">
+
+        <!-- Step 1: Contact -->
+        <div style="margin-bottom:2rem;">
+          <h4 style="color:var(--purple-dark);border-bottom:2px solid var(--purple-bg);padding-bottom:.75rem;margin-bottom:1.25rem;">
+            <span style="background:var(--purple);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;margin-right:.5rem;">1</span>
+            Your Contact Information
+          </h4>
+          <div class="form-row cols-2">
+            <div class="form-group" id="fg-name">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name" />
+              <span class="form-error-msg" id="err-name"></span>
+            </div>
+            <div class="form-group" id="fg-email">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <span class="form-error-msg" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-row cols-2">
+            <div class="form-group">
+              <label for="phone">Phone Number (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group" id="fg-qty">
+              <label for="quantity">Quantity Needed *</label>
+              <select id="quantity" name="quantity">
+                <option value="">Select quantity…</option>
+                <option value="1">1 pen</option>
+                <option value="2-5">2–5 pens</option>
+                <option value="6-10">6–10 pens</option>
+                <option value="11-25">11–25 pens</option>
+                <option value="26-50">26–50 pens</option>
+                <option value="51+">51+ pens</option>
+              </select>
+              <span class="form-error-msg" id="err-qty"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Order Type -->
+        <div style="margin-bottom:2rem;">
+          <h4 style="color:var(--purple-dark);border-bottom:2px solid var(--purple-bg);padding-bottom:.75rem;margin-bottom:1.25rem;">
+            <span style="background:var(--purple);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;margin-right:.5rem;">2</span>
+            Order Type
+          </h4>
+          <div class="order-type-grid" id="orderTypeGrid">
+            <div class="order-type-card" data-type="personal">
+              <div class="ot-icon">🎁</div>
+              <div class="ot-label">Personal Gift</div>
+            </div>
+            <div class="order-type-card" data-type="wedding">
+              <div class="ot-icon">💍</div>
+              <div class="ot-label">Wedding Favor</div>
+            </div>
+            <div class="order-type-card" data-type="corporate">
+              <div class="ot-icon">💼</div>
+              <div class="ot-label">Corporate Gift</div>
+            </div>
+            <div class="order-type-card" data-type="teacher">
+              <div class="ot-icon">🍎</div>
+              <div class="ot-label">Teacher Gift</div>
+            </div>
+          </div>
+          <input type="hidden" id="orderType" name="orderType" />
+          <span class="form-error-msg" id="err-type" style="margin-top:.5rem;display:block;"></span>
+        </div>
+
+        <!-- Step 3: Design -->
+        <div style="margin-bottom:2rem;">
+          <h4 style="color:var(--purple-dark);border-bottom:2px solid var(--purple-bg);padding-bottom:.75rem;margin-bottom:1.25rem;">
+            <span style="background:var(--purple);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;margin-right:.5rem;">3</span>
+            Design Preferences
+          </h4>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label>Color Theme (select all that apply)</label>
+            <div class="color-chips" id="colorChips">
+              <span class="color-chip" data-color="purple">💜 Purple</span>
+              <span class="color-chip" data-color="gold">✨ Gold</span>
+              <span class="color-chip" data-color="pink">🩷 Pink</span>
+              <span class="color-chip" data-color="blue">💙 Blue</span>
+              <span class="color-chip" data-color="black">🖤 Black</span>
+              <span class="color-chip" data-color="white">🤍 White</span>
+              <span class="color-chip" data-color="red">❤️ Red</span>
+              <span class="color-chip" data-color="green">💚 Green</span>
+              <span class="color-chip" data-color="rainbow">🌈 Rainbow</span>
+              <span class="color-chip" data-color="custom">🎨 Custom Mix</span>
+            </div>
+          </div>
+
+          <div class="form-row cols-2">
+            <div class="form-group">
+              <label for="personText">Name / Initials / Text to Include</label>
+              <input type="text" id="personText" name="personText" placeholder="e.g. Sarah M. or Mrs. Johnson" />
+            </div>
+            <div class="form-group">
+              <label for="budget">Estimated Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select range…</option>
+                <option value="under25">Under $25</option>
+                <option value="25-50">$25 – $50</option>
+                <option value="50-100">$50 – $100</option>
+                <option value="100-250">$100 – $250</option>
+                <option value="250+">$250+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top:1rem;">
+            <label for="embellishments">Preferred Embellishments / Style</label>
+            <select id="embellishments" name="embellishments">
+              <option value="">Select a style…</option>
+              <option>Crystals &amp; Rhinestones</option>
+              <option>Pearls &amp; Beads</option>
+              <option>Floral (silk flowers, petals)</option>
+              <option>Butterfly charms</option>
+              <option>Crown topper</option>
+              <option>Character / themed charms</option>
+              <option>Minimalist gold accents</option>
+              <option>Mixed / Surprise me!</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Step 4: Details -->
+        <div style="margin-bottom:2rem;">
+          <h4 style="color:var(--purple-dark);border-bottom:2px solid var(--purple-bg);padding-bottom:.75rem;margin-bottom:1.25rem;">
+            <span style="background:var(--purple);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.85rem;margin-right:.5rem;">4</span>
+            Additional Details
+          </h4>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label for="specialInstructions">Special Instructions or Inspiration</label>
+            <textarea id="specialInstructions" name="specialInstructions" placeholder="Tell us more! Describe the occasion, the recipient, any colors or themes that are important, or share a link to inspiration images."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="inspoFile">Upload Inspiration Images (optional)</label>
+            <input type="file" id="inspoFile" name="inspoFile" accept="image/*,.pdf" multiple
+              style="padding:.6rem;border:2px dashed var(--gray-100);border-radius:var(--radius-sm);cursor:pointer;background:var(--gray-50);" />
+            <span style="font-size:.8rem;color:var(--gray-400);margin-top:.25rem;">JPEG, PNG, or PDF · Max 10MB each</span>
+          </div>
+
+          <div style="margin-top:1.25rem;padding:1rem;background:var(--purple-bg);border-radius:var(--radius-sm);border-left:4px solid var(--purple);">
+            <p style="font-size:.88rem;color:var(--purple-dark);">
+              <strong>📋 What happens next:</strong> After you submit, our design team will review your request and follow up within <strong>24–48 hours</strong> with a quote, timeline, and a design preview. No payment is required until you approve the design.
+            </p>
+          </div>
+        </div>
+
+        <!-- Honeypot (spam protection) -->
+        <input type="text" name="_honeypot" style="display:none;" tabindex="-1" autocomplete="off" />
+
+        <button type="submit" class="btn btn-primary btn-full" style="font-size:1rem;padding:1rem;">
+          <i class="fa-solid fa-crown"></i> Submit Custom Order Request
+        </button>
+
+        <p style="text-align:center;font-size:.8rem;color:var(--gray-400);margin-top:.75rem;">
+          By submitting you agree to our <a href="#" style="color:var(--purple);">Privacy Policy</a>. We never share your information.
+        </p>
+
+      </form>
+    </div>
+
+    <!-- FAQ accordion below form -->
+    <div style="max-width:780px;margin:3rem auto 0;">
+      <h3 style="font-family:var(--font-heading);color:var(--purple-dark);text-align:center;margin-bottom:1.5rem;">Frequently Asked Questions</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-btn" data-acc="faq1"><span>How long does a custom order take?</span><span class="chevron">▾</span></button>
+          <div class="accordion-body" id="acc-faq1">
+            <p>Standard custom orders take 5–10 business days to create and ship. For orders of 10+ pens, please allow 10–14 business days. Rush options are available — just mention your deadline in the Special Instructions field and we'll do our best to accommodate.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" data-acc="faq2"><span>What's the minimum order quantity?</span><span class="chevron">▾</span></button>
+          <div class="accordion-body" id="acc-faq2">
+            <p>There's no minimum! We happily create a single custom pen as a personal gift. For bulk orders (10+), we offer discounted pricing per pen — mention your quantity and we'll include bulk pricing in your quote.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" data-acc="faq3"><span>Can I see a preview before paying?</span><span class="chevron">▾</span></button>
+          <div class="accordion-body" id="acc-faq3">
+            <p>Yes! Once we receive your request we'll send a digital design preview or photo mockup for your approval before we begin crafting. No payment is required until you're completely happy with the design.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" data-acc="faq4"><span>Are custom orders refundable?</span><span class="chevron">▾</span></button>
+          <div class="accordion-body" id="acc-faq4">
+            <p>Because each custom pen is made specifically for you, custom orders are final sale once production begins. However, if there's a defect or damage in shipping, we'll replace it at no cost. We work closely with you during the design process to ensure you love it before we start crafting.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-btn" data-acc="faq5"><span>Do you offer corporate or bulk pricing?</span><span class="chevron">▾</span></button>
+          <div class="accordion-body" id="acc-faq5">
+            <p>Absolutely! We offer tiered bulk pricing for orders of 10 or more pens. Corporate orders can include your brand colors, logo charms, and custom packaging. Please fill out the form above and select "Corporate Gift" as your order type — we'll reach out with a detailed bulk quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:#fff;">Royalty's Pens<span>✦ Write Like Royalty ✦</span></div>
+        <p>Handcrafted luxury pens designed to make every moment of writing extraordinary.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Shop</h5><ul><li><a href="shop.html">All Pens</a></li><li><a href="custom-orders.html">Custom Orders</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html#about">About Us</a></li><li><a href="#">FAQs</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul><li><a href="#">Shipping Policy</a></li><li><a href="#">Return Policy</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Royalty's Pens. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header"><h3>🛒 Your Cart</h3><button class="cart-close" id="cartClose">✕</button></div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty"><div class="empty-icon">👜</div><p>Your cart is empty.</p><a href="shop.html" class="btn btn-purple btn-sm mt-2">Browse Collection</a></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-total"><span>Total</span><span class="price" id="cartTotal">$0.00</span></div>
+    <a href="#" class="btn btn-primary btn-full mb-1"><i class="fa-solid fa-lock"></i> Secure Checkout</a>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="quickViewModal">
+  <div class="modal">
+    <div class="modal-header"><button class="modal-close" id="modalClose">✕</button></div>
+    <div class="modal-body">
+      <div class="modal-img" id="modalImg" style="background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;font-size:4rem;">💎</div>
+      <div class="modal-info">
+        <span class="badge badge-gold">Handcrafted</span>
+        <h3 id="modalName" style="margin-top:.75rem;"></h3>
+        <div class="stars" style="margin:.4rem 0;">★★★★★</div>
+        <div class="modal-price" id="modalPrice"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <button class="btn btn-primary modal-cart-btn" style="flex:1;">Add to Cart</button>
+          <a href="product.html" class="btn btn-purple" style="flex:1;">Full Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+<script>
+  // Order type selection
+  document.querySelectorAll('.order-type-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.order-type-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      document.getElementById('orderType').value = card.dataset.type;
+      document.getElementById('err-type').textContent = '';
+    });
+  });
+
+  // Color chips multi-select
+  document.querySelectorAll('.color-chip').forEach(chip => {
+    chip.addEventListener('click', () => chip.classList.toggle('selected'));
+  });
+
+  // Form submission
+  document.getElementById('customOrderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+
+    // Reset errors
+    document.querySelectorAll('.form-group').forEach(g => g.classList.remove('error'));
+    document.querySelectorAll('.form-error-msg').forEach(m => m.textContent = '');
+
+    const name  = document.getElementById('fullName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const qty   = document.getElementById('quantity').value;
+    const type  = document.getElementById('orderType').value;
+
+    if (!name) {
+      document.getElementById('fg-name').classList.add('error');
+      document.getElementById('err-name').textContent = 'Please enter your name.';
+      valid = false;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      document.getElementById('fg-email').classList.add('error');
+      document.getElementById('err-email').textContent = 'Please enter a valid email address.';
+      valid = false;
+    }
+    if (!qty) {
+      document.getElementById('fg-qty').classList.add('error');
+      document.getElementById('err-qty').textContent = 'Please select a quantity.';
+      valid = false;
+    }
+    if (!type) {
+      document.getElementById('err-type').textContent = 'Please select an order type.';
+      valid = false;
+    }
+
+    if (!valid) {
+      document.querySelector('.form-group.error')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+
+    // Success
+    document.getElementById('customOrderForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    window.scrollTo({ top: document.getElementById('formSuccess').offsetTop - 100, behavior: 'smooth' });
+  });
+
+  function resetForm() {
+    document.getElementById('customOrderForm').reset();
+    document.getElementById('customOrderForm').style.display = 'block';
+    document.getElementById('formSuccess').style.display = 'none';
+    document.querySelectorAll('.order-type-card').forEach(c => c.classList.remove('selected'));
+    document.querySelectorAll('.color-chip').forEach(c => c.classList.remove('selected'));
+    document.getElementById('orderType').value = '';
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id   = btn.dataset.acc;
+      const body = document.getElementById('acc-' + id);
+      const isOpen = body.classList.contains('open');
+      document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('open'));
+      if (!isOpen) { body.classList.add('open'); btn.classList.add('open'); }
+    });
+  });
+</script>
+</body>
+</html>

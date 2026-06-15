@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amethyst Royale Crystal Pen — Royalty's Pens</title>
+  <meta name="description" content="Shop Royalty's Pens for handcrafted luxury pens featuring crystals, beads, charms, butterflies, crowns, and custom designs. Perfect gifts and collectible writing instruments." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Royalty's Pens<span>✦ Write Like Royalty ✦</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="custom-orders.html">Custom Orders</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-cart-btn" id="cartBtn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html"><i class="fa-solid fa-house" style="margin-right:.5rem"></i>Home</a>
+  <a href="shop.html"><i class="fa-solid fa-store" style="margin-right:.5rem"></i>Shop</a>
+  <a href="custom-orders.html"><i class="fa-solid fa-pen-nib" style="margin-right:.5rem"></i>Custom Orders</a>
+</nav>
+
+<!-- BREADCRUMB -->
+<div style="background:var(--gray-50);border-bottom:1px solid var(--gray-100);padding:.75rem 0;">
+  <div class="container" style="font-size:.85rem;color:var(--gray-400);">
+    <a href="index.html" style="color:var(--gray-400);transition:color .2s;" onmouseover="this.style.color='var(--purple)'" onmouseout="this.style.color='var(--gray-400)'">Home</a>
+    <span style="margin:0 .5rem;">›</span>
+    <a href="shop.html" style="color:var(--gray-400);transition:color .2s;" onmouseover="this.style.color='var(--purple)'" onmouseout="this.style.color='var(--gray-400)'">Shop</a>
+    <span style="margin:0 .5rem;">›</span>
+    <span style="color:var(--purple);">Amethyst Royale Crystal Pen</span>
+  </div>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<section class="product-detail-section">
+  <div class="container">
+    <div class="product-detail-grid">
+
+      <!-- Gallery -->
+      <div>
+        <div class="gallery-main" id="galleryMain">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;" id="mainImgInner">
+            <svg width="100" height="280" viewBox="0 0 100 280">
+              <rect x="35" y="15" width="30" height="220" rx="15" fill="url(#dg1)"/>
+              <polygon points="50,235 36,275 64,275" fill="#C0C0C0"/>
+              <circle cx="50" cy="38"  r="8" fill="#E8C86A"/>
+              <circle cx="38" cy="72"  r="5" fill="#C9A84C"/>
+              <circle cx="63" cy="100" r="7" fill="#E8C86A"/>
+              <circle cx="40" cy="140" r="5" fill="#C9A84C"/>
+              <circle cx="62" cy="168" r="6" fill="#E8C86A"/>
+              <circle cx="46" cy="200" r="4" fill="#C9A84C"/>
+              <text x="15" y="55"  font-size="16" fill="#E8C86A" opacity=".6">✦</text>
+              <text x="68" y="90"  font-size="12" fill="#C9A84C" opacity=".5">✦</text>
+              <text x="12" y="130" font-size="14" fill="#FFD700" opacity=".4">✦</text>
+              <text x="70" y="155" font-size="10" fill="#E8C86A" opacity=".4">✦</text>
+              <defs>
+                <linearGradient id="dg1" x1="35" y1="15" x2="65" y2="235" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%"   stop-color="#9B59B6"/>
+                  <stop offset="50%"  stop-color="#6B2D8B"/>
+                  <stop offset="100%" stop-color="#4A1060"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <div class="gallery-thumbs" id="galleryThumbs">
+          <div class="gallery-thumb active" data-bg="linear-gradient(135deg,#4A1060,#9B59B6)" data-emoji="💎">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;font-size:1.4rem;">💎</div>
+          </div>
+          <div class="gallery-thumb" data-bg="linear-gradient(135deg,#6B2D8B,#C9A84C)" data-emoji="✨">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#6B2D8B,#C9A84C);display:flex;align-items:center;justify-content:center;font-size:1.4rem;">✨</div>
+          </div>
+          <div class="gallery-thumb" data-bg="linear-gradient(135deg,#2D0B4E,#7B68EE)" data-emoji="👑">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2D0B4E,#7B68EE);display:flex;align-items:center;justify-content:center;font-size:1.4rem;">👑</div>
+          </div>
+          <div class="gallery-thumb" data-bg="linear-gradient(135deg,#4A1060,#E8C86A)" data-emoji="🎁">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#4A1060,#E8C86A);display:flex;align-items:center;justify-content:center;font-size:1.4rem;">🎁</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="product-detail-info">
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem;">
+          <span class="badge badge-gold">Best Seller</span>
+          <span class="badge badge-purple">Crystal Collection</span>
+          <span style="font-size:.8rem;color:#2e7d32;font-weight:700;"><i class="fa-solid fa-circle-check" style="margin-right:.25rem;"></i>In Stock</span>
+        </div>
+
+        <h1 class="product-name">Amethyst Royale Crystal Pen</h1>
+
+        <div style="display:flex;align-items:center;gap:.75rem;margin:.5rem 0 1.25rem;">
+          <div class="stars">★★★★★</div>
+          <span class="review-count">(47 reviews)</span>
+          <span style="color:var(--gray-100);">|</span>
+          <a href="#reviews" style="font-size:.85rem;color:var(--purple);font-weight:700;">See all reviews</a>
+        </div>
+
+        <div class="price-block">
+          <span class="current">$34.99</span>
+          <span class="was">$44.99</span>
+          <span class="save">Save 22%</span>
+        </div>
+
+        <p style="color:var(--gray-600);font-size:.95rem;line-height:1.7;margin-bottom:1.25rem;">
+          A true statement piece for your desk, handbag, or gift collection. The Amethyst Royale is adorned with hand-placed genuine amethyst crystals and faceted rhinestones, each individually set for maximum sparkle. The gold-tipped cap and smooth-writing refillable cartridge make this as functional as it is breathtaking.
+        </p>
+
+        <table class="spec-table">
+          <tr><td>Materials</td><td>Amethyst crystals, rhinestones, gold-tone metal accents</td></tr>
+          <tr><td>Ink Color</td><td>Black (refillable)</td></tr>
+          <tr><td>Refillable</td><td>Yes — standard medium-point cartridge</td></tr>
+          <tr><td>Length</td><td>5.75 inches (cap on) · 5.25 inches (cap off)</td></tr>
+          <tr><td>Weight</td><td>1.2 oz</td></tr>
+          <tr><td>Pen Type</td><td>Ballpoint</td></tr>
+        </table>
+
+        <div class="qty-selector">
+          <label>Quantity</label>
+          <div class="qty-control">
+            <button type="button" id="qtyMinus">−</button>
+            <input type="number" id="qtyInput" value="1" min="1" max="99" readonly />
+            <button type="button" id="qtyPlus">+</button>
+          </div>
+        </div>
+
+        <div class="detail-btns">
+          <button class="btn btn-primary add-to-cart-btn"
+            data-name="Amethyst Royale Crystal Pen"
+            data-price="$34.99">
+            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+          </button>
+          <button class="btn btn-purple" onclick="showToast('Redirecting to checkout…')">
+            <i class="fa-solid fa-bolt"></i> Buy Now
+          </button>
+        </div>
+
+        <!-- Trust badges -->
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;padding:1rem 0;border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100);margin:.5rem 0;">
+          <div style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--gray-600);">
+            <i class="fa-solid fa-lock" style="color:var(--purple);"></i> Secure Checkout
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--gray-600);">
+            <i class="fa-solid fa-truck" style="color:var(--purple);"></i> Ships in 3–5 days
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--gray-600);">
+            <i class="fa-solid fa-rotate-left" style="color:var(--purple);"></i> 30-day returns
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;color:var(--gray-600);">
+            <i class="fa-solid fa-gift" style="color:var(--purple);"></i> Gift wrapping available
+          </div>
+        </div>
+
+        <!-- Payment icons -->
+        <div style="display:flex;align-items:center;gap:.75rem;margin-top:.75rem;flex-wrap:wrap;">
+          <span style="font-size:.75rem;color:var(--gray-400);">We accept:</span>
+          <i class="fa-brands fa-cc-visa" style="font-size:1.6rem;color:#1A1F71;"></i>
+          <i class="fa-brands fa-cc-mastercard" style="font-size:1.6rem;color:#EB001B;"></i>
+          <i class="fa-brands fa-cc-paypal" style="font-size:1.6rem;color:#003087;"></i>
+          <i class="fa-brands fa-apple-pay" style="font-size:1.6rem;color:#000;"></i>
+          <i class="fa-brands fa-google-pay" style="font-size:1.6rem;color:#4285F4;"></i>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" style="margin-top:1.75rem;">
+          <div class="accordion-item">
+            <button class="accordion-btn" data-acc="desc">
+              <span>Product Description</span>
+              <span class="chevron">▾</span>
+            </button>
+            <div class="accordion-body" id="acc-desc">
+              <p>The Amethyst Royale Crystal Pen is a wearable work of art. Each pen starts with a premium ballpoint base before our artisan hand-places every individual crystal using professional-grade adhesive that won't chip, flake, or fade. The amethyst-toned stones catch light from every angle, creating a mesmerizing sparkle with every stroke of the pen.</p>
+              <p style="margin-top:.75rem;">Perfect for desks, journals, planners, and as gifts for the special people in your life.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" data-acc="materials">
+              <span>Materials &amp; Care</span>
+              <span class="chevron">▾</span>
+            </button>
+            <div class="accordion-body" id="acc-materials">
+              <ul style="padding-left:1.25rem;list-style:disc;">
+                <li>Premium ballpoint pen base (smooth-writing medium point)</li>
+                <li>Hand-placed amethyst crystals &amp; rhinestones</li>
+                <li>Gold-tone metal cap and clip</li>
+                <li>Professional adhesive — water-resistant, heat-resistant</li>
+                <li>Refillable: standard Parker-style ink cartridge (black or blue)</li>
+              </ul>
+              <p style="margin-top:.75rem;"><strong>Care:</strong> Avoid submerging in water. Store cap-on in a pen case or gift box. Clean gently with a soft dry cloth.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" data-acc="shipping">
+              <span>Shipping &amp; Returns</span>
+              <span class="chevron">▾</span>
+            </button>
+            <div class="accordion-body" id="acc-shipping">
+              <p><strong>Standard Shipping:</strong> 3–5 business days · Free on orders over $50</p>
+              <p style="margin-top:.5rem;"><strong>Expedited Shipping:</strong> 1–2 business days · Available at checkout</p>
+              <p style="margin-top:.5rem;"><strong>Returns:</strong> We accept returns within 30 days of delivery. Custom orders are final sale. Items must be unused and in original packaging.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:1.5rem;">Customer Reviews</h2>
+
+    <div class="review-avg">
+      <div class="avg-score">4.9</div>
+      <div>
+        <div class="stars" style="font-size:1.4rem;">★★★★★</div>
+        <div style="font-size:.85rem;color:var(--gray-400);margin-top:.25rem;">Based on 47 reviews</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <div>
+          <div class="stars" style="font-size:.95rem;">★★★★★</div>
+          <span class="reviewer">Michelle T.</span>
+        </div>
+        <span class="date">December 3, 2024</span>
+      </div>
+      <p>Everyone asks where I got my pen. It's absolutely gorgeous — I get compliments every single day at work! The crystals are still perfectly in place after 3 months of daily use.</p>
+    </div>
+
+    <div class="review-card">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <div>
+          <div class="stars" style="font-size:.95rem;">★★★★★</div>
+          <span class="reviewer">Angela R.</span>
+        </div>
+        <span class="date">November 18, 2024</span>
+      </div>
+      <p>The perfect gift for my daughter and her favorite teacher. Both of them absolutely loved it. The packaging was beautiful and it arrived so fast. Will definitely order again!</p>
+    </div>
+
+    <div class="review-card">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <div>
+          <div class="stars" style="font-size:.95rem;">★★★★★</div>
+          <span class="reviewer">Keisha J.</span>
+        </div>
+        <span class="date">October 29, 2024</span>
+      </div>
+      <p>I'm a journal fanatic and this pen has become my most prized possession. The crystals are stunning and it writes beautifully. Smooth, consistent ink every time. Highly recommend!</p>
+    </div>
+
+    <div style="margin-top:1.5rem;">
+      <button class="btn btn-purple" onclick="showToast('Review submission coming soon!')">
+        <i class="fa-solid fa-star"></i> Write a Review
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section style="padding:4rem 0;background:var(--gradient-section);">
+  <div class="container text-center">
+    <div class="section-label">You Might Also Love</div>
+    <h2 class="section-title">Related Products</h2>
+    <div class="divider-gold"></div>
+
+    <div class="products-grid" style="margin-top:2rem;">
+
+      <div class="product-card" data-name="Golden Butterfly Dream Pen" data-price="$29.99" data-desc="Delicate hand-painted butterfly charms in gold and blush shimmer." data-category="butterfly">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#3D1060,#FF69B4);display:flex;align-items:center;justify-content:center;font-size:3rem;">🦋</div>
+          <div class="product-quick-view"><button class="btn btn-primary btn-sm quick-view-btn">Quick View</button></div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Golden Butterfly Dream Pen</div>
+          <div class="product-sub">Butterfly Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row"><span class="product-price">$29.99</span></div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="Queen's Crown Jewel Pen" data-price="$39.99" data-desc="Bold gold crown topper dripping with rhinestones." data-category="crown">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#0D0D0D,#C9A84C);display:flex;align-items:center;justify-content:center;font-size:3rem;">👑</div>
+          <div class="product-quick-view"><button class="btn btn-primary btn-sm quick-view-btn">Quick View</button></div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Queen's Crown Jewel Pen</div>
+          <div class="product-sub">Crown Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row"><span class="product-price">$39.99</span></div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="Sapphire Luxe Crystal Pen" data-price="$44.99" data-desc="Cascading sapphire blue crystals from cap to tip." data-category="crystal">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#0A2560,#6495ED);display:flex;align-items:center;justify-content:center;font-size:3rem;">💠</div>
+          <div class="product-quick-view"><button class="btn btn-primary btn-sm quick-view-btn">Quick View</button></div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Sapphire Luxe Crystal Pen</div>
+          <div class="product-sub">Crystal Collection</div>
+          <div class="stars">★★★★★</div>
+          <div class="product-price-row"><span class="product-price">$44.99</span></div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-name="Rose Garden Floral Pen" data-price="$27.99" data-desc="Tiny silk roses and seed pearls on a blush pink barrel." data-category="floral">
+        <div class="product-img-wrap">
+          <div class="product-art" style="height:100%;background:linear-gradient(135deg,#6B1060,#FF85A1);display:flex;align-items:center;justify-content:center;font-size:3rem;">🌸</div>
+          <div class="product-quick-view"><button class="btn btn-primary btn-sm quick-view-btn">Quick View</button></div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Rose Garden Floral Pen</div>
+          <div class="product-sub">Floral Collection</div>
+          <div class="stars">★★★★☆</div>
+          <div class="product-price-row"><span class="product-price">$27.99</span></div>
+          <div class="product-actions">
+            <a href="product.html" class="btn btn-purple btn-sm">View</a>
+            <button class="btn btn-primary btn-sm add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:#fff;">Royalty's Pens<span>✦ Write Like Royalty ✦</span></div>
+        <p>Handcrafted luxury pens designed to make every moment of writing extraordinary.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Shop</h5><ul><li><a href="shop.html">All Pens</a></li><li><a href="custom-orders.html">Custom Orders</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="index.html#about">About Us</a></li><li><a href="#">FAQs</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul><li><a href="#">Shipping Policy</a></li><li><a href="#">Return Policy</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Royalty's Pens. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<!-- CART / MODAL / TOAST -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header"><h3>🛒 Your Cart</h3><button class="cart-close" id="cartClose">✕</button></div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty"><div class="empty-icon">👜</div><p>Your cart is empty.</p><a href="shop.html" class="btn btn-purple btn-sm mt-2">Browse Collection</a></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-total"><span>Total</span><span class="price" id="cartTotal">$0.00</span></div>
+    <a href="#" class="btn btn-primary btn-full mb-1"><i class="fa-solid fa-lock"></i> Secure Checkout</a>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="quickViewModal">
+  <div class="modal">
+    <div class="modal-header"><button class="modal-close" id="modalClose">✕</button></div>
+    <div class="modal-body">
+      <div class="modal-img" id="modalImg" style="background:linear-gradient(135deg,#4A1060,#9B59B6);display:flex;align-items:center;justify-content:center;font-size:4rem;">💎</div>
+      <div class="modal-info">
+        <span class="badge badge-gold">Handcrafted</span>
+        <h3 id="modalName" style="margin-top:.75rem;"></h3>
+        <div class="stars" style="margin:.4rem 0;">★★★★★</div>
+        <div class="modal-price" id="modalPrice"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <button class="btn btn-primary modal-cart-btn" style="flex:1;">Add to Cart</button>
+          <a href="product.html" class="btn btn-purple" style="flex:1;">Full Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+<script>
+  // Gallery thumbnail switching
+  document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      const bg = thumb.dataset.bg;
+      const emoji = thumb.dataset.emoji;
+      document.getElementById('mainImgInner').style.background = bg;
+      document.getElementById('mainImgInner').innerHTML = `<span style="font-size:5rem;">${emoji}</span>`;
+    });
+  });
+
+  // Qty controls
+  const qtyInput = document.getElementById('qtyInput');
+  document.getElementById('qtyMinus').addEventListener('click', () => {
+    if (parseInt(qtyInput.value) > 1) qtyInput.value = parseInt(qtyInput.value) - 1;
+  });
+  document.getElementById('qtyPlus').addEventListener('click', () => {
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+  });
+
+  // Accordion
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.acc;
+      const body = document.getElementById('acc-' + id);
+      const isOpen = body.classList.contains('open');
+      document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('open'));
+      if (!isOpen) { body.classList.add('open'); btn.classList.add('open'); }
+    });
+  });
+</script>
+</body>
+</html>
